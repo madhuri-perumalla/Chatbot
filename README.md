@@ -23,9 +23,17 @@ It matches the user's query with existing input data and responds with a relevan
 
 - **Language**: Python 🐍
 - **Libraries/Tools**:
-  - `NLTK` or `spaCy` (optional for NLP)
-  - `Flask` or `Streamlit` (if you made a web interface)
-  - File-based or JSON data input
+  - `NLTK` or `spaCy` 
+  - `Streamlit` 
+  - File-based data input
 
-## 📁 Project Structure
 
+## 🚀 Getting Started
+
+### 1. Clone the repository:
+```bash
+git clone https://github.com/madhuri-perumalla/College-Guidance-Chatbot.git
+cd College-Guidance-Chatbot
+```
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
