@@ -3,7 +3,10 @@ import pandas as pd
 import google.generativeai as genai
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 st.set_page_config(page_title="Svecw College Chatbot", layout="centered")
 
 if "messages" not in st.session_state:
@@ -24,7 +27,7 @@ df['Answer'] = df['Answer'].str.lower()
 vectorizer = TfidfVectorizer()
 question_vectors = vectorizer.fit_transform(df['Question'])
 
-API_KEY = "AIzaSyCz07TLyE3pTCkqLUkuBttArj0iKf7rxek" 
+API_KEY = os.getenv("GEMINI_API_KEY") 
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
