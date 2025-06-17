@@ -23,14 +23,14 @@ It matches the user's query with existing input data and responds with a relevan
 
 - **Language**: Python 🐍
 - **Libraries/Tools**:
-  - `NLTK` or `spaCy` 
-  - `Streamlit` 
+  - `scikit-learn` - for NLP and query matching
+  - `Streamlit` - for a web interface
   - File-based data input
 
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository:
+### Clone the repository:
 ```bash
 git clone https://github.com/madhuri-perumalla/College-Guidance-Chatbot.git
 cd College-Guidance-Chatbot
